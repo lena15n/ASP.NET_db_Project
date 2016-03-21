@@ -82,6 +82,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\myDB.accdb" />
     <Content Include="JS\jqquery.js" />
     <Content Include="JS\validatingofdata1.js" />
     <Content Include="packages.config" />
@@ -115,7 +116,9 @@
     <Content Include="Resources\web.jpg" />
     <Content Include="Resources\web1.jpg" />
     <Content Include="Styles\style.css" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Global.asax.cs">
