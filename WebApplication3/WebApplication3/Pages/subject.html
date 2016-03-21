@@ -1,0 +1,69 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+          "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="../Styles/style.css" />
+    <script type="application/javascript" src="../JS/validatingofdata1.js"></script>
+    <script type="application/javascript" src="../JS/jqquery.js"></script>
+    <title>Предмет</title>
+</head>
+<body>
+    <div class="all">
+        <div class="head">
+            <table>
+                <tr>
+                    <td><p><img class="setting" src="../Resources/faq-logo.png" alt="картинка отклеилась"></p></td>
+                    <td><a href="mainpage.html" class="downspecial"><h1 class="mytopheader"><b>ФАКУЛЬТЕТ ИНФОРМАТИКИ (Online Courses)</b></h1></a></td>
+                </tr>
+            </table>
+        </div>
+        <div class="tabs">
+            <a class="downspecial" href="entertosystem.html">Войти в систему</a>
+        </div>
+        <div class="leftblock">
+            <div>
+                <p><br><a class="leftmenu" href="http://www.ssau.ru/news/" target="_blank">Новости</a></p>
+                <p><a class="leftmenu" href="http://www.ssau.ru" target="_blank">СГАУ</a></p>
+                <p><a class="leftmenu" href="professors.html">Преподаватели</a></p>
+                <p><a class="leftmenu" href="http://fit.ssau.ru/struktura/kafedryi/" target="_blank">Кафедры</a></p>
+            </div>
+        </div>
+        <div class="whitetext">
+            <br>
+            <h2 class="loginheader" style="top: 2%; margin-bottom: 4%">Предмет<br></h2>
+            <div style="text-align: center; margin-top: -3%;"><img class="prepod" src="../Resources/web1.jpg" style="height: 200px; width: 260px"></div>
+            <a class="nounderline" href="http://virtual6.ssau.ru/Moodle/course/view.php?id=716" target="_blank">
+                <p class="departments" style="left: 0;  text-align: center">Технологии сети Интернет</p>
+            </a>
+            <p class="headd" style="left: 0; text-align: center; margin-bottom: 5%">Кафедра Программных систем</p>
+            <div style="margin: 5%">
+                <p class="about">
+                    Курс "Технологии сети Интернет" разработан для бакалавров на основе стандарта "Фундаментальная
+                    информатика и информационные технологии"
+                </p>
+                <p class="about">
+                    <br>В рамках курса излагаются основные принципы построения и функционирования сети Интернет,
+                    рассматриваются базирующиея на них информационные технологии и формируются основные навыки создания клиент-серверных
+                    Web-приложений.
+                </p>
+            </div>
+            <h2 id="start_button" class="label" onclick="openSubject()" style="cursor: pointer">Начать прохождение курса</h2>
+        </div>
+        <div class="downblock">
+            <a class="downspecial" href="http://www.ssau.ru/info/" target="_blank">Об университете</a>
+            <a class="downspecial" href="http://www.ssau.ru" target="_blank">Полезные ссылки</a>
+            <a class="downspecial" href="http://www.ssau.ru" target="_blank">Контакты</a>
+            <a class="downspecial" href="about.html">О сайте</a>
+        </div>
+
+        <script type="application/javascript">
+            $(document).ready(function() {
+            $("p.departments").css("display", "none").fadeIn(800);
+
+            $("p.headd").css("display", "none").fadeIn(800);
+                $("img.prepod").css("display", "none").fadeIn(800);
+            });
+        </script>
+    </div>
+</body>
+</html>
