@@ -9,8 +9,6 @@
 <body>
     <form id="form1" runat="server">
     <div>
-
-
     
         <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:MyConnectionToAccessDBString %>" OnSelecting="SqlDataSource1_Selecting" ProviderName="<%$ ConnectionStrings:MyConnectionToAccessDBString.ProviderName %>" SelectCommand="SELECT [Id], [Login], [Email], [FirstName], [UserName], [SecondName] FROM [MainTable]" DeleteCommand="DELETE FROM [MainTable] WHERE [Id] = ?" InsertCommand="INSERT INTO [MainTable] ([Login], [Email], [FirstName], [UserName], [SecondName]) VALUES (?, ?, ?, ?, ?)" UpdateCommand="UPDATE [MainTable] SET [Login] = ?, [Email] = ?, [FirstName] = ?, [UserName] = ?, [SecondName] = ? WHERE [Id] = ?">
             <DeleteParameters>
@@ -49,9 +47,16 @@
             <PagerStyle BackColor="#E7E7FF" ForeColor="#4A3C8C" HorizontalAlign="Right" />
             <RowStyle BackColor="#E7E7FF" ForeColor="#4A3C8C" />
         </asp:DetailsView>
+        <asp:Label ID="lbl" runat="server"></asp:Label>
         <br />
     
     </div>
+
+        <div style="height: 77px; margin-top: 42px">
+
+
+
+        </div>
     </form>
 </body>
 </html>
