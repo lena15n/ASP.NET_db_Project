@@ -87,6 +87,7 @@
     <Content Include="JS\validatingofdata1.js" />
     <Content Include="packages.config" />
     <Content Include="MyWebForm.aspx" />
+    <Content Include="WebFormForRegestr.aspx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -131,6 +132,13 @@
     </Compile>
     <Compile Include="MyWebForm.aspx.designer.cs">
       <DependentUpon>MyWebForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebFormForRegestr.aspx.cs">
+      <DependentUpon>WebFormForRegestr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebFormForRegestr.aspx.designer.cs">
+      <DependentUpon>WebFormForRegestr.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

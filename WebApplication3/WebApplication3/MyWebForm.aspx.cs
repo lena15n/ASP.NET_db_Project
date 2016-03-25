@@ -68,7 +68,23 @@ namespace WebApplication3
             }
         }
 
+        public void InsertUserData(User user)
+        {
+
+
+        }
+
+
+
+
+
+
         protected void SqlDataSource1_Selecting(object sender, SqlDataSourceSelectingEventArgs e)
+        {
+
+        }
+
+        protected void DetailsView1_PageIndexChanging(object sender, DetailsViewPageEventArgs e)
         {
 
         }
