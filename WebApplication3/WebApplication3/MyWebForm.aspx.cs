@@ -68,11 +68,11 @@ namespace WebApplication3
             }
         }
 
-        public void InsertUserData(User user)
-        {
+        //public void InsertUserData(User user)
+        //{
 
 
-        }
+        //}
 
 
 

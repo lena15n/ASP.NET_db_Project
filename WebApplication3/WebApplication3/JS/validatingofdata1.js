@@ -190,7 +190,7 @@ function validateRegestr(id) {
                 validateRegestr('mail') && validateRegestr('phone')) {
                 //window.open('mainpage.html'); // будет в новой вкладке
                 textEnter = 'Вошли как ' + document.getElementById('login').value;
-                location.href = 'mainpage.html';// в той же вкладке
+               // location.href = 'mainpage.html';// в той же вкладке
             }
             else {
                 if (document.getElementById('submit').parentNode.lastChild.className != 'error-message') {

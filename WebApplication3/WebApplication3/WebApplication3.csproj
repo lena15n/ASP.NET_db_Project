@@ -102,7 +102,7 @@
     <Content Include="Pages\mainpage.html" />
     <Content Include="Pages\prof.html" />
     <Content Include="Pages\professors.html" />
-    <Content Include="Pages\regestr.html" />
+    <Content Include="Pages\__regestr.html" />
     <Content Include="Pages\subject.html" />
     <Content Include="Pages\subjectstudy.html" />
     <Content Include="Resources\50861.jpg" />

@@ -8,19 +8,24 @@
     <script type="application/javascript" src="../JS/validatingofdata1.js">
     </script>
     <title>Регистрация</title>
+    <style type="text/css">
+        .newform {
+            height: 936px;
+        }
+    </style>
 </head>
-<body>
+<body>    
     <div class="all">
         <div class="head">
             <table>
                 <tr>
                     <td><p><img class="setting" src="../Resources/faq-logo.png" alt="картинка отклеилась"></p></td>
-                    <td><a href="mainpage.html" class="downspecial"><h1 class="mytopheader"><b>ФАКУЛЬТЕТ ИНФОРМАТИКИ (Online Courses)</b></h1></a></td>
+                    <td><a href="../Pages/mainpage.html" class="downspecial"><h1 class="mytopheader"><b>ФАКУЛЬТЕТ ИНФОРМАТИКИ (Online Courses)</b></h1></a></td>
                 </tr>
             </table>
         </div>
 
-        <div class="tabs" style="padding: 8px; width: 98.8%">
+        <div class="tabs" style="padding: 8px; width: 98.8%; top: 0px; left: 0px;">
         </div>
 
         <div class="centerblock" style="top: 0">
@@ -29,61 +34,50 @@
 
             <div class="enterpart" style="left: -20%">
 
-                <form id="form1" runat="server">
-                    <div style="height: 358px">
+                <form class="newform"  method="post" runat="server" action="WebFormForRegestr.aspx">  <!--delete 'action'  action="javascript:void(0);"-->
 
-
-            
-
-                    </div>
-                </form>
-
-
-
-
-                <form class="newform" action="javascript:void(0);">
-
+                    <p><asp:Label ID="lbl11" runat="server" Text="Label" Font-Bold="True" Font-Size="XX-Large" Font-Strikeout="False" ForeColor="#99FF33"></asp:Label></p>
+                   
+                
                     <p><label for="surname"></label></p>
-                    <p><br>Фамилия: <input type='text' id="surname" onchange="validateRegestr('surname')"></p>
+                    <p><br>Фамилия: <asp:TextBox ID="surname" runat="server" onchange="validateRegestr('surname')" TextMode="SingleLine"></asp:TextBox>
+                    </p>
 
                     <p><br><label for="name"></label></p>
-                    <p>Имя: <input type="text" id="name" onchange="validateRegestr('name')"></p>
+                    <p>Имя: <asp:TextBox ID="name" runat="server" onchange="validateRegestr('name')" TextMode="SingleLine"></asp:TextBox>
+                    </p>
 
                     <p><br><label for="lastname"></label></p>
-                    <p>Отчество: <input type='text' id="lastname" onchange="validateRegestr('lastname')"></p>
+                    <p>Отчество: <asp:TextBox ID="lastname" runat="server" onchange="validateRegestr('lastname')" TextMode="SingleLine"></asp:TextBox>
+                    </p>
 
                     <p><br><label for="login"></label></p>
-                    <p>Логин: <input type='text' id="login" onchange="validateRegestr('login')"></p>
+                    <p>Логин: <asp:TextBox ID="login" runat="server" onchange="validateRegestr('login')" TextMode="SingleLine"></asp:TextBox>
+                    </p>
 
                     <p><br><label for="password1"></label></p>
-                    <p>Пароль: <input type="password" id="password1" onchange="validateRegestr('password1')"></p>
+                    <p>Пароль: <asp:TextBox ID="password1" runat="server" onchange="validateRegestr('password1')" TextMode="Password"></asp:TextBox>
+                    </p>
 
                     <p><br><label for="password2"></label></p>
-                    <p>Повторите пароль: <input type="password" id="password2" onchange="validateRegestr('password2')"></p>
+                    <p>Повторите пароль: <asp:TextBox ID="password2" runat="server" onchange="validateRegestr('password2')" TextMode="Password"></asp:TextBox>
+                    </p>
 
                     <p><br><label for="mail"></label></p>
-                    <p>Электронная почта: <input type="text" id="mail" onchange="validateRegestr('mail')"></p>
+                    <p>Электронная почта: <asp:TextBox ID="mail" runat="server" onchange="validateRegestr('mail')" TextMode="Email"></asp:TextBox>
+                    </p>
 
                     <p><br><label for="phone" style="position: relative; left: -23%">Мобильный телефон: <br> <i>(необязательно)</i></label></p>
                     <p>
-                        <input type="text" id="phone" onchange="validateRegestr('phone')">
+                        <asp:TextBox ID="phone" runat="server" onchange="validateRegestr('phone')" TextMode="Phone"></asp:TextBox>
                     </p>
 
-                    <p><br><input id="submit" type="submit" value="Далее" onclick="validateRegestr('submit')"></p>
+                    <p><br><input id="submit" type="submit" value="Далее" onclick="validateRegestr('submit');"  runat="server" onserverclick="submit_ServerClick"></p>
+                 </form>
+
                     <p><br><br><br><br><br></p>
-                </form>
             </div>
         </div>
-
-       
-
-
-
-
-
-    
-
-
 
 
 
@@ -97,6 +91,8 @@
             <a class="downspecial" href="about.html">О сайте</a>
         </div>
     </div>
+
+
 
 
 </body>
