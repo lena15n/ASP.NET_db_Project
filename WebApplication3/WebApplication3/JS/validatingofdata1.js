@@ -42,8 +42,10 @@ function validateEnter(form) {
     }
 
     if (flag) {
-        textEnter = 'Вошли как ' + elems.login.value;
-        document.location.href = 'mainpage.html';
+        //textEnter = 'Вошли как ' + elems.login.value;
+        //document.location.href = 'mainpage.html';
+        return true;
+       
 
         // document.open("mainpage.html",document.title);
         // window.g .open('mainpage.html');
@@ -57,6 +59,8 @@ function validateEnter(form) {
             document.getElementById('submitall').parentNode.appendChild(msgElem);
         }
     }
+
+    return false;
 }
 /*function onSubmitClick(form){
  if (validateEnter(form) == false) {

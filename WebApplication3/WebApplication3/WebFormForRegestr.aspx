@@ -49,7 +49,7 @@
 
                             <p><br><br><br></p>
 
-                            <p><a href="../Pages/entertosystem.html" class="new">Войти в систему</a></p>
+                            <p><a href="WebFormEnter.aspx" class="new">Войти в систему</a></p>
                    
                     
                      <%} else {%>
