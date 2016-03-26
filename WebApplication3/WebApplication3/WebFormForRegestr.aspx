@@ -34,10 +34,25 @@
 
             <div class="enterpart" style="left: -20%">
 
-                <form class="newform"  method="post" runat="server" action="WebFormForRegestr.aspx">  <!--delete 'action'  action="javascript:void(0);"-->
+                <form id="registrForm" class="newform"  method="post" runat="server" action="WebFormForRegestr.aspx">  <!--delete 'action'  action="javascript:void(0);"-->
+                    <% if (success){%>
 
-                    <p><asp:Label ID="lbl11" runat="server" Text="Label" Font-Bold="True" Font-Size="XX-Large" Font-Strikeout="False" ForeColor="#99FF33"></asp:Label></p>
+                        <p><br><br><br><br><br></p>
+
+                    <%} %>
+
+                    <p><asp:Label ID="lbl_result" runat="server" Font-Bold="True" Font-Size="X-Large" Font-Strikeout="False" ForeColor="#0099FF"></asp:Label></p>
                    
+                    
+                    
+                     <% if (success) { %>
+
+                            <p><br><br><br></p>
+
+                            <p><a href="../Pages/entertosystem.html" class="new">Войти в систему</a></p>
+                   
+                    
+                     <%} else {%>
                 
                     <p><label for="surname"></label></p>
                     <p><br>Фамилия: <asp:TextBox ID="surname" runat="server" onchange="validateRegestr('surname')" TextMode="SingleLine"></asp:TextBox>
@@ -73,7 +88,10 @@
                     </p>
 
                     <p><br><input id="submit" type="submit" value="Далее" onclick="validateRegestr('submit');"  runat="server" onserverclick="submit_ServerClick"></p>
-                 </form>
+                 <% } %>
+
+                </form>
+                
 
                     <p><br><br><br><br><br></p>
             </div>

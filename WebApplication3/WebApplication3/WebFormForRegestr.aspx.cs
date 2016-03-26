@@ -13,6 +13,8 @@ namespace WebApplication3
 {
     public partial class WebFormForRegestr : System.Web.UI.Page
     {
+        public bool success;
+
         protected void Page_Load(object sender, EventArgs e)
         {
             
@@ -56,18 +58,20 @@ namespace WebApplication3
 
                 int count = addNewUserCommand.ExecuteNonQuery();
 
+                if (count != 0)
+                {
+                    success = true;
 
-
-
-
-                lbl11.Text = surname;
+                    lbl_result.Text = "Регистрация прошла успешно, " + name + "!\n\n";
+                }
 
                 oleDbCon.Close();
             }
             catch (Exception ex)
             {
-                lbl11.Text = "При соединении с БД произошла ошибка ";
-                lbl11.Text += ex.Message;
+                lbl_result.Text = "При соединении с БД произошла ошибка ";
+                lbl_result.Text += ex.Message;
+                success = false;
             }
         }
     }         
