@@ -5,6 +5,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
+    <style type="text/css">
+        #form1 {
+            height: 360px;
+            width: 635px;
+        }
+    </style>
 </head>
 <body>
 
@@ -41,70 +47,72 @@
             </div>
         </div>
         <div class="whitetext" style="text-align: left;">
-            <h2 class="loginheader" style="margin-bottom: 4%; margin-top: 3%">О сайте</h2>
-            <div style="margin: 5%">
+            <h2 class="loginheader" style="margin-bottom: 4%; margin-top: 3%">Поиск по сайту</h2>
+            <div style="margin: 5%; ">
+                
+                <div style="width: 100%;  height:100%; margin-top: 4%; align-items: center; ">
+                    <form id="form1" runat="server">
 
 
+                         <div class="enterpart" style="width: 100%;  text-align: right; left: 7%; background-color:lightblue; ">
+                        <p><b>Поиск пользователя по логину<b></p>
+                         <br><br>
+                        <asp:Label ID="Label1" runat="server" Text="Логин: " Font-Bold="False"></asp:Label>
+                        <asp:TextBox ID="findByLoginTextBox" runat="server" Width="130px"></asp:TextBox>
+                         <br><br>
+                        <asp:Button ID="findByLoginButton" runat="server" Text="Найти" onclick="findByLoginButton_Click"/>
+                         <br><br>
+                       
+                        <asp:GridView ID="GridView2" runat="server" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="3" Width="578px"> <%--DataSourceID="SqlDataSource1"--%>                     
+                            <FooterStyle BackColor="White" ForeColor="#000066" />
+                            <HeaderStyle BackColor="#006699" Font-Bold="True" ForeColor="White" />
+                            <PagerStyle BackColor="White" ForeColor="#000066" HorizontalAlign="Left" />
+                            <RowStyle ForeColor="#000066" />
+                            <SelectedRowStyle BackColor="#669999" Font-Bold="True" ForeColor="White" />
+                            <SortedAscendingCellStyle BackColor="#F1F1F1" />
+                            <SortedAscendingHeaderStyle BackColor="#007DBB" />
+                            <SortedDescendingCellStyle BackColor="#CAC9C9" />
+                            <SortedDescendingHeaderStyle BackColor="#00547E" />
+                        </asp:GridView>
+                     </div>
+                        <br><br><br>
+
+                     <div class="enterpart" style="width: 100%;text-align: right; left: 7%;background-color:lightblue; ">
+                        <p><b>Поиск пользователя по фамилии и имени<b></p>
+                         <br><br>
+                        <asp:Label ID="findSurnamelbl" runat="server" Text="Фамилия: " Font-Bold="False"></asp:Label>
+                        <asp:TextBox ID="findSurnameTextBox" runat="server" Width="130px"></asp:TextBox>
+                         <br><br>
+                        <asp:Label ID="findUserNamelbl" runat="server" Font-Bold="False" Font-Size="Medium" Text="Имя: "></asp:Label>
+                        <asp:TextBox ID="findUserNameTextBox" runat="server" Height="16px" Width="130px"></asp:TextBox>
+                         <br><br>
+                        <asp:Button ID="findUserButton" runat="server" Text="Найти" onclick="findUserButton_Click" />
+                         <br><br>
+                       
+                        <asp:GridView ID="GridView1" runat="server" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="3" Width="578px"> <%--DataSourceID="SqlDataSource1"--%>                     
+                            <FooterStyle BackColor="White" ForeColor="#000066" />
+                            <HeaderStyle BackColor="#006699" Font-Bold="True" ForeColor="White" />
+                            <PagerStyle BackColor="White" ForeColor="#000066" HorizontalAlign="Left" />
+                            <RowStyle ForeColor="#000066" />
+                            <SelectedRowStyle BackColor="#669999" Font-Bold="True" ForeColor="White" />
+                            <SortedAscendingCellStyle BackColor="#F1F1F1" />
+                            <SortedAscendingHeaderStyle BackColor="#007DBB" />
+                            <SortedDescendingCellStyle BackColor="#CAC9C9" />
+                            <SortedDescendingHeaderStyle BackColor="#00547E" />
+                        </asp:GridView>
+                     </div>
 
 
+                    
+                        
+                        
+                    </form>
+                </div>
 
+                
 
-
-
-    <div style="width: 522px">
-     <form id="form1" runat="server">
-        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:MyConnectionToAccessDBString %>" OnSelecting="SqlDataSource1_Selecting" ProviderName="<%$ ConnectionStrings:MyConnectionToAccessDBString.ProviderName %>" SelectCommand="SELECT [Id], [Login], [Email], [FirstName], [UserName], [SecondName] FROM [MainTable]" DeleteCommand="DELETE FROM [MainTable] WHERE [Id] = ?" InsertCommand="INSERT INTO [MainTable] ([Login], [Email], [FirstName], [UserName], [SecondName]) VALUES (?, ?, ?, ?, ?)" UpdateCommand="UPDATE [MainTable] SET [Login] = ?, [Email] = ?, [FirstName] = ?, [UserName] = ?, [SecondName] = ? WHERE [Id] = ?">
-            <DeleteParameters>
-                <asp:Parameter Name="Id" Type="Int32" />
-            </DeleteParameters>
-            <InsertParameters>
-                <asp:Parameter Name="Id" Type="Int32" />
-                <asp:Parameter Name="Login" Type="String" />
-                <asp:Parameter Name="Email" Type="String" />
-                <asp:Parameter Name="FirstName" Type="String" />
-                <asp:Parameter Name="UserName" Type="String" />
-                <asp:Parameter Name="SecondName" Type="String" />
-            </InsertParameters>
-            <UpdateParameters>
-                <asp:Parameter Name="Login" Type="String" />
-                <asp:Parameter Name="Email" Type="String" />
-                <asp:Parameter Name="FirstName" Type="String" />
-                <asp:Parameter Name="UserName" Type="String" />
-                <asp:Parameter Name="SecondName" Type="String" />
-                <asp:Parameter Name="Id" Type="Int32" />
-            </UpdateParameters>
-        </asp:SqlDataSource>
-        Список пользователей сайта:<asp:DetailsView ID="DetailsView1" runat="server" AutoGenerateRows="False" BackColor="White" BorderColor="#E7E7FF" BorderStyle="None" BorderWidth="1px" CellPadding="3" DataKeyNames="Id" DataSourceID="SqlDataSource1" GridLines="Horizontal" Height="50px" Width="455px" OnPageIndexChanging="DetailsView1_PageIndexChanging">
-            <AlternatingRowStyle BackColor="#F7F7F7" />
-            <EditRowStyle BackColor="#738A9C" Font-Bold="True" ForeColor="#F7F7F7" />
-            <Fields>
-                <asp:BoundField DataField="Login" HeaderText="Логин пользователя" SortExpression="Login" />
-                <asp:BoundField DataField="Email" HeaderText="Email" SortExpression="Email" />
-                <asp:BoundField DataField="FirstName" HeaderText="Фамилия" />
-                <asp:BoundField DataField="UserName" HeaderText="Имя" SortExpression="UserName" />
-                <asp:BoundField DataField="SecondName" HeaderText="Отчество" SortExpression="SecondName" />
-                <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" ShowInsertButton="True" />
-            </Fields>
-            <FooterStyle BackColor="#B5C7DE" ForeColor="#4A3C8C" />
-            <HeaderStyle BackColor="#4A3C8C" Font-Bold="True" ForeColor="#F7F7F7" />
-            <PagerStyle BackColor="#E7E7FF" ForeColor="#4A3C8C" HorizontalAlign="Right" />
-            <RowStyle BackColor="#E7E7FF" ForeColor="#4A3C8C" />
-        </asp:DetailsView>
-        <asp:Label ID="lbl" runat="server"></asp:Label>
-        <br />
-    </form>
-    </div>
-
-
-
-
-
-
-
-
-                <p class="about">Сайт предназначен для удаленного обучения студентов, магистров и аспирантов. Хранит множество полезных материалов и призван упростить и без того нелегкий процесс обучения. В качестве примера текста взят отрывок истории факультета.</p>
                 <p class="about">
-                    Широкое внедрение средств вычислительной техники во все отрасли народного хозяйства поставили перед высшей школой задачу подготовки специалистов по электронно–вычислительным машинам, прикладной математике, программированию, информационным технологиям, а также переподготовки специалистов в области вычислительной техники, автоматизированного проектирования, автоматизированных систем научных исследований,
+                    Сайт предназначен для удаленного обучения студентов, магистров и аспирантов. Хранит множество полезных материалов и призван упростить и без того нелегкий процесс обучения. В качестве примера текста взят отрывок истории факультета.отовки специалистов по электронно–вычислительным машинам, прикладной математике, программированию, информационным технологиям, а также переподготовки специалистов в области вычислительной техники, автоматизированного проектирования, автоматизированных систем научных исследований,
                     занимающихся решением прикладных задач с использованием средств вычислительной техники.
                 </p>
                 <p class="about">
@@ -130,8 +138,5 @@
 
 
 
-        <div style="height: 77px; margin-top: 42px">
-
-        </div>
     </body>
 </html>

@@ -89,6 +89,7 @@
     <Content Include="MyWebForm.aspx" />
     <Content Include="WebFormEnter.aspx" />
     <Content Include="WebFormForRegestr.aspx" />
+    <Content Include="WebFormShow.aspx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -147,6 +148,13 @@
     </Compile>
     <Compile Include="WebFormForRegestr.aspx.designer.cs">
       <DependentUpon>WebFormForRegestr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebFormShow.aspx.cs">
+      <DependentUpon>WebFormShow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebFormShow.aspx.designer.cs">
+      <DependentUpon>WebFormShow.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
