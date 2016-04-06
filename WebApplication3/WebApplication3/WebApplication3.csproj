@@ -87,6 +87,7 @@
     <Content Include="JS\validatingofdata1.js" />
     <Content Include="packages.config" />
     <Content Include="MyWebForm.aspx" />
+    <Content Include="Pages\mainpagenew.html" />
     <Content Include="WebFormEnter.aspx" />
     <Content Include="WebFormForRegestr.aspx" />
     <Content Include="WebFormShow.aspx" />
@@ -101,7 +102,6 @@
     <Content Include="Global.asax" />
     <Content Include="Pages\about.html" />
     <Content Include="Pages\___entertosystem.html" />
-    <Content Include="Pages\mainpage.html" />
     <Content Include="Pages\prof.html" />
     <Content Include="Pages\professors.html" />
     <Content Include="Pages\__regestr.html" />

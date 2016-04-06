@@ -20,7 +20,7 @@
             <table>
                 <tr>
                     <td><p><img class="setting" src="../Resources/faq-logo.png" alt="картинка отклеилась"></p></td>
-                    <td><a href="../Pages/mainpage.html" class="downspecial"><h1 class="mytopheader"><b>ФАКУЛЬТЕТ ИНФОРМАТИКИ (Online Courses)</b></h1></a></td>
+                    <td><a href="../Pages/mainpagenew.html" class="downspecial"><h1 class="mytopheader"><b>ФАКУЛЬТЕТ ИНФОРМАТИКИ (Online Courses)</b></h1></a></td>
                 </tr>
             </table>
         </div>
@@ -106,6 +106,7 @@
             <a class="downspecial" href="http://www.ssau.ru/info/" target="_blank">Об университете</a>
             <a class="downspecial" href="http://www.ssau.ru" target="_blank">Полезные ссылки</a>
             <a class="downspecial" href="http://www.ssau.ru" target="_blank">Контакты</a>
+            <a class="downspecial" href="../MyWebForm.aspx" target="_self">Поиск пользователя</a>
             <a class="downspecial" href="about.html">О сайте</a>
         </div>
     </div>
