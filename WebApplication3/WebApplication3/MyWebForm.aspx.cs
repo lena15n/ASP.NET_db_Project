@@ -134,8 +134,8 @@ namespace WebApplication3
             oleDbCon.Open();
             OleDbDataReader data = cmd.ExecuteReader();
 
-            GridView1.DataSource = data;
-            GridView1.DataBind();
+            GridView2.DataSource = data;
+            GridView2.DataBind();
 
             oleDbCon.Close();
         }

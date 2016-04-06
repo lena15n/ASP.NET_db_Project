@@ -23,7 +23,7 @@
             <p></p>
         </div>
         <div class="whitecenter">
-            <h2 class="loginheader">Вход в систему</h2>
+            <h2 style="margin-bottom: 5%" class="loginheader">Вход в систему</h2>
 
             <%if (lbl_result.Text != ""){%>
                 <p><br><br><br><br><br></p>
@@ -57,6 +57,7 @@
             <a class="downspecial" href="http://www.ssau.ru/info/" target="_blank">Об университете</a>
             <a class="downspecial" href="http://www.ssau.ru" target="_blank">Полезные ссылки</a>
             <a class="downspecial" href="http://www.ssau.ru" target="_blank">Контакты</a>
+            <a class="downspecial" href="../Pages/useful.html" target="_self">Поиск пользователя</a>
             <a class="downspecial" href="../Pages/about.html">О сайте</a>
         </div>
     </div>

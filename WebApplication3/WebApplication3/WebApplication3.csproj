@@ -100,7 +100,7 @@
   <ItemGroup>
     <Content Include="Global.asax" />
     <Content Include="Pages\about.html" />
-    <Content Include="Pages\entertosystem.html" />
+    <Content Include="Pages\___entertosystem.html" />
     <Content Include="Pages\mainpage.html" />
     <Content Include="Pages\prof.html" />
     <Content Include="Pages\professors.html" />
