@@ -50,11 +50,11 @@
              
             <h2 class="loginheader" style="margin-bottom: 4%; margin-top: 3%">Поиск пользователя</h2>
                 
-                <div style="width: 100%;  height:800px; margin-top: 4%; align-items: center; left:400px">
+                <div style="width: 100%;  height:800px; margin-top: 4%; align-items: center;">
                    <form id="form1" runat="server">
 
 
-                         <div class="enterpart" style="width: 100%; height:40%; text-align: right; left: 9%; margin-bottom:700px; background-color:lightblue; margin-bottom:5%">
+                         <div class="enterpart" style="width: 600px; height:40%; text-align: right; left: 150px; margin-bottom:700px; background-color:lightblue; margin-bottom:5%">
                         
                             <p><b>Поиск пользователя по логину<b></p>
                          <br><br>
@@ -62,9 +62,9 @@
                         <asp:TextBox ID="findByLoginTextBox" runat="server" Width="130px"></asp:TextBox>
                          <br><br>
                         <asp:Button ID="findByLoginButton" runat="server" Text="Найти" onclick="findByLoginButton_Click"/>
-                         <br><br>
+                         <br><br><br>
                        
-                        <asp:GridView ID="GridView2" runat="server" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="3" Width="578px"> <%--DataSourceID="SqlDataSource1"--%>                     
+                        <asp:GridView ID="GridView2" runat="server" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="3" Width="600px"> <%--DataSourceID="SqlDataSource1"--%>                     
                             <FooterStyle BackColor="White" ForeColor="#000066" />
                             <HeaderStyle BackColor="#006699" Font-Bold="True" ForeColor="White" />
                             <PagerStyle BackColor="White" ForeColor="#000066" HorizontalAlign="Left" />
@@ -75,12 +75,11 @@
                             <SortedDescendingCellStyle BackColor="#CAC9C9" />
                             <SortedDescendingHeaderStyle BackColor="#00547E" />
                         </asp:GridView>
-                             <br>
                      </div>
 
                        <br /><br /><br /><br />
 
-                     <div class="enterpart" style="width: 100%; height:50%; text-align: right; left: 9%;background-color:lightblue; margin-bottom:500px">
+                     <div class="enterpart" style="width: 600px; height:50%; text-align: right; left: 150px;background-color:lightblue; margin-bottom:500px">
                         <p><b>Поиск пользователя по фамилии и имени<b></p>
                          <br><br>
                         <asp:Label ID="findSurnamelbl" runat="server" Text="Фамилия: " Font-Bold="False"></asp:Label>
@@ -90,9 +89,9 @@
                         <asp:TextBox ID="findUserNameTextBox" runat="server" Height="16px" Width="130px"></asp:TextBox>
                          <br><br>
                         <asp:Button ID="findUserButton" runat="server" Text="Найти" onclick="findUserButton_Click" />
-                         <br><br>
+                         <br><br><br>
                        
-                        <asp:GridView ID="GridView1" runat="server" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="3" Width="578px"> <%--DataSourceID="SqlDataSource1"--%>                     
+                        <asp:GridView ID="GridView1" runat="server" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="3" Width="600px"> <%--DataSourceID="SqlDataSource1"--%>                     
                             <FooterStyle BackColor="White" ForeColor="#000066" />
                             <HeaderStyle BackColor="#006699" Font-Bold="True" ForeColor="White" />
                             <PagerStyle BackColor="White" ForeColor="#000066" HorizontalAlign="Left" />
