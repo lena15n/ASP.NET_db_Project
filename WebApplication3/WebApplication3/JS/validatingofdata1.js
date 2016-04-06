@@ -194,7 +194,9 @@ function validateRegestr(id) {
                 validateRegestr('mail') && validateRegestr('phone')) {
                 //window.open('mainpage.html'); // будет в новой вкладке
                 textEnter = 'Вошли как ' + document.getElementById('login').value;
-               // location.href = 'mainpage.html';// в той же вкладке
+                // location.href = 'mainpage.html';// в той же вкладке
+
+                return true;
             }
             else {
                 if (document.getElementById('submit').parentNode.lastChild.className != 'error-message') {
@@ -204,6 +206,8 @@ function validateRegestr(id) {
                     msgElem.innerHTML = '<br>' + 'Заполните поля корректными данными!';
                     element.parentNode.appendChild(msgElem);//добавили в конец
                 }
+
+                return false;
             }
         }
             break;

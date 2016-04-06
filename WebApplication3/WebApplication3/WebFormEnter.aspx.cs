@@ -39,7 +39,7 @@ namespace WebApplication3
 
                 if (countOfFoundUsers > 0)
                 {
-                    Response.RedirectPermanent("/Pages/mainpage.html");
+                    Response.RedirectPermanent("/Pages/mainpagenew.html");
                     base.OnLoad(e);
                 }
                 else

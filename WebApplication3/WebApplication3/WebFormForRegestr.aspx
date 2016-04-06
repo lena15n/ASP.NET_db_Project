@@ -34,7 +34,7 @@
 
             <div class="enterpart" style="left: -20%">
 
-                <form id="registrForm" class="newform"  method="post" runat="server" action="WebFormForRegestr.aspx">  <!--delete 'action'  action="javascript:void(0);"-->
+                <form id="registrForm" class="newform"  method="post" onsubmit="if(validateRegestr('submit')) submit_ServerClick; else javascript:void(0)" runat="server">  <!--delete 'action'  action="javascript:void(0);"-->
                     <% if (success){%>
 
                         <p><br><br><br><br><br></p>
@@ -87,7 +87,7 @@
                         <asp:TextBox ID="phone" runat="server" onchange="validateRegestr('phone')" TextMode="Phone"></asp:TextBox>
                     </p>
 
-                    <p><br><input id="submit" type="submit" value="Далее" onclick="validateRegestr('submit');"  runat="server" onserverclick="submit_ServerClick"></p>
+                    <p><br><input id="submit" type="submit" value="Далее"   runat="server" ></p>
                  <% } %>
 
                 </form>
