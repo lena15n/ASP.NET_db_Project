@@ -107,7 +107,7 @@
             <a class="downspecial" href="http://www.ssau.ru" target="_blank">Полезные ссылки</a>
             <a class="downspecial" href="http://www.ssau.ru" target="_blank">Контакты</a>
             <a class="downspecial" href="../MyWebForm.aspx" target="_self">Поиск пользователя</a>
-            <a class="downspecial" href="about.html">О сайте</a>
+            <a class="downspecial" href="../Pages/about.html">О сайте</a>
         </div>
     </div>
 

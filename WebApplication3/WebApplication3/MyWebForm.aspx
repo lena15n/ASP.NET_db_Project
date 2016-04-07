@@ -46,9 +46,11 @@
                 <p><a class="leftmenu" href="http://fit.ssau.ru/struktura/kafedryi/" target="_blank">Кафедры</a></p>
             </div>
         </div>
-        <div class="whitetext" style="text-align: left;">
+        <div class="whitetext" style="text-align: left; top: 39.7%; text-align:center">
              
             <h2 class="loginheader" style="margin-bottom: 4%; margin-top: 3%">Поиск пользователя</h2>
+            <p>На данном сайте есть возможность найти ваших знакомых и коллег</p>
+            <p>Ниже расположены два варианта поиска на любой вкус</p>
                 
                 <div style="width: 100%;  height:800px; margin-top: 4%; align-items: center;">
                    <form id="form1" runat="server">
@@ -118,8 +120,8 @@
             <a class="downspecial" href="http://www.ssau.ru/info/" target="_blank">Об университете</a>
             <a class="downspecial" href="http://www.ssau.ru" target="_blank">Полезные ссылки</a>
             <a class="downspecial" href="http://www.ssau.ru/info/contacts/" target="_blank">Контакты</a>
-            <a class="downspecial" href="../Pages/useful.html" target="_self">Поиск пользователя</a>
-            <a class="downspecial" href="#">О сайте</a>
+            <a class="downspecial" href="MyWebForm.aspx" target="_self">Поиск пользователя</a>
+            <a class="downspecial" href="../Pages/about.html">О сайте</a>
         </div>
     </div>
 </form>

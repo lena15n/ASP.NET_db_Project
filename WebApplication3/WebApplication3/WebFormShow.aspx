@@ -30,7 +30,7 @@
                 <p><a class="leftmenu" href="http://fit.ssau.ru/struktura/kafedryi/" target="_blank">Кафедры</a></p>
             </div>
         </div>
-        <div  class="whitetext" >
+        <div  class="whitetext" style="top:39.7%">
             <br>
             <h2 class="loginheader" style="color: white;top: 2%; margin-bottom: 4%; width: 360px; border: solid; background-color: #00bbfe; border-color: #00adf2; left: 30%; border-radius: 90px; "><br>Технологии сети Интернет<br><br></h2>
             <p style="left: 0; top: -2%; margin-top: -3%; margin-bottom: 8%; text-align: center;" class="headd">Кафедра Программных систем</p>
