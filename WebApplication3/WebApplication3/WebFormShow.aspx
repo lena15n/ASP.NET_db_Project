@@ -10,7 +10,7 @@
     <title>Предмет</title>
 </head>
 <body>
-    <div class="all" >
+    <div class="all">
         <div class="head">
             <table>
                 <tr>
@@ -34,7 +34,7 @@
             <br>
             <h2 class="loginheader" style="color: white;top: 2%; margin-bottom: 4%; width: 360px; border: solid; background-color: #00bbfe; border-color: #00adf2; left: 30%; border-radius: 90px; "><br>Технологии сети Интернет<br><br></h2>
             <p style="left: 0; top: -2%; margin-top: -3%; margin-bottom: 8%; text-align: center;" class="headd">Кафедра Программных систем</p>
-            <div  id="contentBlock" style="margin: 5%; width: 90%">
+            <div  id="contentBlock" style="margin: 5%; width: 90%; margin-top:-1%">
                 <p class="header" style="left: 25%">АДРЕСАЦИЯ В СЕТИ ИНТЕРНЕТ</p>
                 <p class="about">
                     В рамках курса излагаются основные принципы построения и функционирования сети Интернет,
@@ -186,7 +186,8 @@
                 xhttp.open("GET", "WebFormShow2.aspx", true);
                 xhttp.send();
             }
-
+            
+            
         </script>
 </body>
 </html>

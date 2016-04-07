@@ -89,6 +89,7 @@
     <Content Include="MyWebForm.aspx" />
     <Content Include="Pages\mainpagenew.html" />
     <Content Include="Pages\subjectstudy2.html" />
+    <Content Include="Resources\cidr.png" />
     <Content Include="WebFormEnter.aspx" />
     <Content Include="WebFormForRegestr.aspx" />
     <Content Include="WebFormShow2.aspx" />
