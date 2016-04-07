@@ -46,7 +46,7 @@
                     <p>Пароль: <asp:TextBox ID="password" runat="server"  TextMode="Password"></asp:TextBox></p>
                     <p id="passwordError"></p>
 
-                    <p><br><input id="submitall" type="submit" value="Войти" runat="server" ></p>
+                    <p><br><input id="submitall" type="submit" value="Войти" runat="server"></p>
                 </form>
             </div>
 

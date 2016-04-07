@@ -88,8 +88,10 @@
     <Content Include="packages.config" />
     <Content Include="MyWebForm.aspx" />
     <Content Include="Pages\mainpagenew.html" />
+    <Content Include="Pages\subjectstudy2.html" />
     <Content Include="WebFormEnter.aspx" />
     <Content Include="WebFormForRegestr.aspx" />
+    <Content Include="WebFormShow2.aspx" />
     <Content Include="WebFormShow.aspx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -148,6 +150,13 @@
     </Compile>
     <Compile Include="WebFormForRegestr.aspx.designer.cs">
       <DependentUpon>WebFormForRegestr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebFormShow2.aspx.cs">
+      <DependentUpon>WebFormShow2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebFormShow2.aspx.designer.cs">
+      <DependentUpon>WebFormShow2.aspx</DependentUpon>
     </Compile>
     <Compile Include="WebFormShow.aspx.cs">
       <DependentUpon>WebFormShow.aspx</DependentUpon>
