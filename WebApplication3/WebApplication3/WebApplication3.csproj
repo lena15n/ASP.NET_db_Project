@@ -94,6 +94,7 @@
     <Content Include="WebFormForRegestr.aspx" />
     <Content Include="WebFormShow2.aspx" />
     <Content Include="WebFormShow.aspx" />
+    <None Include="Properties\PublishProfiles\mysiteexamplee.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -109,7 +110,7 @@
     <Content Include="Pages\professors.html" />
     <Content Include="Pages\__regestr.html" />
     <Content Include="Pages\subject.html" />
-    <Content Include="Pages\subjectstudy.html" />
+    <Content Include="Pages\___subjectstudy.html" />
     <Content Include="Resources\50861.jpg" />
     <Content Include="Resources\abstract.jpg" />
     <Content Include="Resources\blue-texture-HD.jpg" />

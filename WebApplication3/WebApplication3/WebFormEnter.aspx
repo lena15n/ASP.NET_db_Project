@@ -34,7 +34,7 @@
 
 
             <div class="enterpart" style="left: -20%; text-align: right">
-                <form id="enterForm" class="form" method="post" runat="server" onsubmit="if(validateEnter(document.getElementById('enterForm'))) submitall_ServerClick;"><!-- onsubmit="return validateEnter(document.getElementById('enterForm'));" -->
+                <form id="enterForm" class="form" method="post" runat="server"  ><!-- onsubmit="return validateEnter(document.getElementById('enterForm'));" -->
                     <p>&nbsp;</p>
                    
                     <p><br><label for="login"></label></p>
@@ -46,7 +46,7 @@
                     <p>Пароль: <asp:TextBox ID="password" runat="server"  TextMode="Password"></asp:TextBox></p>
                     <p id="passwordError"></p>
 
-                    <p><br><input id="submitall" type="submit" value="Войти" runat="server"></p>
+                    <p><br><input id="submitall" type="submit" value="Войти" runat="server" onserverclick="submitall_ServerClick"></p>
                 </form>
             </div>
 

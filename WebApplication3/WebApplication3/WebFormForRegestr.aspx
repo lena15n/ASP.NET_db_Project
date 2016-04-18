@@ -34,7 +34,7 @@
 
             <div class="enterpart" style="left: -20%">
 
-                <form id="registrForm" class="newform"  method="post" onsubmit="if(validateRegestr('submit')) submit_ServerClick; "  runat="server">  <!--delete 'action'  action="javascript:void(0);"-->
+                <form id="registrForm" class="newform"  method="post"   runat="server">  <!--delete 'action'  action="javascript:void(0);"-->
                     <% if (success){%>
 
                         <p><br><br><br><br><br></p>
@@ -55,39 +55,39 @@
                      <%} else {%>
                 
                     <p><label for="surname"></label></p>
-                    <p><br>Фамилия: <asp:TextBox ID="surname" runat="server" onchange="validateRegestr('surname')" TextMode="SingleLine"></asp:TextBox>
+                    <p><br>Фамилия: <asp:TextBox ID="surname" runat="server"  TextMode="SingleLine"></asp:TextBox>
                     </p>
 
                     <p><br><label for="name"></label></p>
-                    <p>Имя: <asp:TextBox ID="name" runat="server" onchange="validateRegestr('name')" TextMode="SingleLine"></asp:TextBox>
+                    <p>Имя: <asp:TextBox ID="name" runat="server" TextMode="SingleLine"></asp:TextBox>
                     </p>
 
                     <p><br><label for="lastname"></label></p>
-                    <p>Отчество: <asp:TextBox ID="lastname" runat="server" onchange="validateRegestr('lastname')" TextMode="SingleLine"></asp:TextBox>
+                    <p>Отчество: <asp:TextBox ID="lastname" runat="server"  TextMode="SingleLine"></asp:TextBox>
                     </p>
 
                     <p><br><label for="login"></label></p>
-                    <p>Логин: <asp:TextBox ID="login" runat="server" onchange="validateRegestr('login')" TextMode="SingleLine"></asp:TextBox>
+                    <p>Логин: <asp:TextBox ID="login" runat="server" TextMode="SingleLine"></asp:TextBox>
                     </p>
 
                     <p><br><label for="password1"></label></p>
-                    <p>Пароль: <asp:TextBox ID="password1" runat="server" onchange="validateRegestr('password1')" TextMode="Password"></asp:TextBox>
+                    <p>Пароль: <asp:TextBox ID="password1" runat="server"  TextMode="Password"></asp:TextBox>
                     </p>
 
                     <p><br><label for="password2"></label></p>
-                    <p>Повторите пароль: <asp:TextBox ID="password2" runat="server" onchange="validateRegestr('password2')" TextMode="Password"></asp:TextBox>
+                    <p>Повторите пароль: <asp:TextBox ID="password2" runat="server" TextMode="Password"></asp:TextBox>
                     </p>
 
                     <p><br><label for="mail"></label></p>
-                    <p>Электронная почта: <asp:TextBox ID="mail" runat="server" onchange="validateRegestr('mail')" TextMode="Email"></asp:TextBox>
+                    <p>Электронная почта: <asp:TextBox ID="mail" runat="server"  TextMode="Email"></asp:TextBox>
                     </p>
 
                     <p><br><label for="phone" style="position: relative; left: -23%">Мобильный телефон: <br> <i>(необязательно)</i></label></p>
                     <p>
-                        <asp:TextBox ID="phone" runat="server" onchange="validateRegestr('phone')" TextMode="Phone"></asp:TextBox>
+                        <asp:TextBox ID="phone" runat="server"  TextMode="Phone"></asp:TextBox>
                     </p>
 
-                    <p><br><input id="submit" type="submit" value="Далее"></p>
+                    <p><br><input id="submit" type="submit" runat="server" value="Далее"  onserverclick="submit_ServerClick"></p>
                  <% } %>
 
                 </form>
